@@ -1,0 +1,16 @@
+@media (max-width: 1024px) {
+    .hero-3 {
+        height: auto;
+        padding: 120px 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .g-3{
+        text-align: left;
+    }
+
+    .col-md-6 .form-select{
+        width: 25%!important;
+    }
+}

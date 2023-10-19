@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins",sans-serif;
+    color:#052c65;
+    background-color: #fff;
+    line-height: 1.6;
+    font-size: 15px;
+    margin: 0;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    transition: all .3s ease-in-out;
+    background-color: white!important;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-tertiary-bg-rgb),var(--bs-bg-opacity))!important;
+}
+
+.nav-link {
+    padding-right: 28px!important;
+    font-weight: 500;
+    color: #052c65!important;
+}
+
+.nav-link:hover {
+    color: #50c594!important;
+}
+
+.active {
+    color: #50c594!important;
+}
+
+.btn-primary {
+    background-color: #50c594;
+    border: 1px solid #50c594 !important;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    color: #50c594!important;
+    background-color: white!important;
+}
+
+.row {
+    position: relative;
+}
+
+#home {
+    background-image: url(https://live.staticflickr.com/65535/53269276062_9789f2531e_b.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-3-title {
+    font-size: 56px;
+    line-height: 76px;
+}
+
+.text-muted {
+    color: rgb(255, 255, 255,.9)!important;
+}
+
+.form-label {
+    margin: 0.5rem 0!important;
+}
+
+.col-12 button {
+    margin: 1rem 0!important;
+}
+
+.g-3 {
+    padding: 30px;
+    background-color: rgb(255, 255, 255)!important;
+    border-radius: 5px;
+}
+
+.form-label {
+    color: #052c65;
+}
+
+.section {
+    padding: 120px 0;
+}
