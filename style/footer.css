@@ -40,10 +40,6 @@
     display: none;
 }
 
-.py-2:hover .fs-15 {
-    color: #50c594;
-}
-
 .py-5 {
     padding-top: 3rem!important;
     padding-bottom: 3rem!important;
@@ -67,5 +63,13 @@
 }
 
 .git:hover, .tw:hover, .fb:hover, .inst:hover {
+    color: #50c594!important;
+}
+
+.fs-15 {
+    color: #a5a5bf!important;
+}
+
+.py-2:hover .fs-15 {
     color: #50c594!important;
 }
