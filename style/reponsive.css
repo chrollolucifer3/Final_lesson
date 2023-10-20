@@ -25,6 +25,16 @@
     .service__content {
         padding-bottom: 30px;
     }
+
+    .grid {
+        grid-template-columns: auto!important;
+        grid-template-rows: auto!important;
+    }
+
+    .grid__item1, .grid__item2, .grid__item3, .grid__item4 {
+        grid-row: auto; 
+        grid-column: auto; 
+    }
 }
 
 @media (min-width: 768px) {
