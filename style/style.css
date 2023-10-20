@@ -166,11 +166,11 @@ b{
 }
 
 .owl-carousel .owl-item img {
-    width: 200px;
-    height: 200px;
+    width: 200px!important;
+    height: 200px!important;
     object-fit: cover;
     border-radius: 100%;
-    display: inline;
+    display: inline!important;
 }
 
 .owl-nav {
