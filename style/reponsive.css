@@ -10,13 +10,46 @@
         text-align: left;
     }
 
-    .col-md-6 .form-select{
+    .col-md-8 .form-select{
         width: 25%!important;
+    }
+
+    .section {
+        padding: 80px 0 50px;
+    }
+
+    .col-md-3{
+        flex-basis: 50%;
+    }
+
+    .service__content {
+        padding-bottom: 30px;
     }
 }
 
 @media (min-width: 768px) {
     .blockH {
         margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 580px) {
+    .col-md-3{
+        flex-basis: 100%;
+    }
+
+    .margin-bot {
+        margin-bottom: 15px;
+    }
+
+    .pb-3 {
+        padding: 0!important;
+    }
+    .mb-4 {
+        margin-bottom: 0!important;
+    }
+
+    .footer {
+        padding: 50px 0 50px;
     }
 }

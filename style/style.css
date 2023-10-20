@@ -68,6 +68,7 @@ a {
     background-image: url(https://live.staticflickr.com/65535/53271167366_13bd0b8641_k.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center center;
 }
 
 .hero-3-title {
@@ -103,11 +104,24 @@ a {
 }
 
 /* Phần service */
+#service, #place {
+    background-color: #E4F1ED;
+}
+.blockH {
+    display: flex;
+    align-items: center;
+}
 
-.blockH .bdrBottom {
-    display: inline-block;
-    border-bottom: 1px solid #c2d6db;
-    padding-bottom: 11px;
+.blockH span {
+    margin-right: 5px;
+}
+
+b{
+    display: block;
+    flex: 1;
+    height: 2px;
+    background-color:#50c594;
+    opacity: .5;
 }
 
 .fontNeuron {
@@ -145,3 +159,27 @@ a {
 }
 
 /* Hết phần service */
+
+/* Phần review */
+.client-review p {
+    color: #052c65!important;
+}
+
+.owl-carousel .owl-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 100%;
+    display: inline;
+}
+
+.owl-nav {
+    display: none;
+}
+
+.cli-text {
+    color: #052c65;
+    font-size: 13px;
+    opacity: .8;
+}
+/* Hết phần review */
