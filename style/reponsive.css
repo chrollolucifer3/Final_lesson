@@ -14,3 +14,9 @@
         width: 25%!important;
     }
 }
+
+@media (min-width: 768px) {
+    .blockH {
+        margin-bottom: 50px;
+    }
+}
