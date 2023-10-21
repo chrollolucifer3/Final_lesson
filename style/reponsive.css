@@ -11,7 +11,7 @@
     }
 
     .col-md-8 .form-select{
-        width: 25%!important;
+        width: 40%!important;
     }
 
     .section {
@@ -34,6 +34,11 @@
     .grid__item1, .grid__item2, .grid__item3, .grid__item4 {
         grid-row: auto; 
         grid-column: auto; 
+    }
+
+    .fontNeuron {
+        font-size: 18px;
+        margin-bottom: 20px;
     }
 }
 
@@ -61,5 +66,15 @@
 
     .footer {
         padding: 50px 0 50px;
+    }
+
+    .g-3 {
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .hero-3-title {
+        font-size: 48px;
+        line-height: 50px;
     }
 }
