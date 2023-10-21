@@ -64,6 +64,10 @@ a {
     position: relative;
 }
 
+/* Hết phần nav */
+
+/* Phần Home */
+
 #home {
     background-image: url(https://live.staticflickr.com/65535/53271167366_13bd0b8641_k.jpg);
     background-repeat: no-repeat;
@@ -103,8 +107,13 @@ a {
     position: relative;
 }
 
+.section-xs {
+    padding: 50px 0px 50px;
+    position: relative;
+}
+
 /* Phần service */
-#service, #place {
+#service, #place, #properties {
     background-color: #E4F1ED;
 }
 .blockH {
@@ -246,8 +255,8 @@ b{
 }
 
 .item__hover:hover img {
-    transform: scale(1.1); /* Điều chỉnh giá trị tùy theo nhu cầu của bạn */
-    filter: brightness(50%); /* Điều chỉnh giá trị tùy theo nhu cầu của bạn */
+    transform: scale(1.1); 
+    filter: brightness(50%);
 }
 /* Hết phần place */
 
@@ -303,5 +312,54 @@ b{
 
 /* Hết phần agent */
 
-/* Phần partners */
+/* Phần  Properties*/
 
+.text-dark {
+    font-size: 13px!important;
+    color:rgba(8, 45, 99, 0.8)!important;
+}
+
+.text-large {
+    font-size: 24px!important;
+}
+
+.list-group-item p {
+    margin: 0;
+}
+
+.card {
+    overflow: hidden;
+}
+
+.card .card-img-top {
+    transition: transform 0.5s;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.1); /* Điều chỉnh giá trị tùy ý để phóng to hơn hoặc ít hơn */
+}
+
+.pd-bot {
+    padding-bottom: 24px;
+}
+
+.pagination {
+    padding-top: 24px;
+}
+
+.page-link {
+    color: #052c65!important;
+}
+
+.active>.page-link, .page-link.active {
+    z-index: 3;
+    color: white!important;
+    background-color: #50c594;
+    border-color: #50c594
+}
+
+.card .card-img-top {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}

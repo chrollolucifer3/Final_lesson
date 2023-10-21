@@ -3,6 +3,10 @@
         height: auto;
         padding: 120px 0px;
     }
+
+    .col-md-4 {
+        flex-basis: 50%!important;
+    }
 }
 
 @media (max-width: 768px) {
@@ -39,6 +43,11 @@
     .fontNeuron {
         font-size: 18px;
         margin-bottom: 20px;
+    }
+
+    .col-md-4 {
+        flex-basis: 80%!important;
+        margin: 0 auto;
     }
 }
 
@@ -83,5 +92,10 @@
 
     #service h2 {
         font-size: 14px;
+    }
+
+    .col-md-4 {
+        flex-basis: 90%!important;
+        margin: 0 auto;
     }
 }
