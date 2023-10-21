@@ -49,9 +49,6 @@
 }
 
 @media (max-width: 580px) {
-    .col-md-3{
-        flex-basis: 100%;
-    }
 
     .margin-bot {
         margin-bottom: 15px;
@@ -76,5 +73,15 @@
     .hero-3-title {
         font-size: 48px;
         line-height: 50px;
+    }
+
+    .service__icon {
+        font-size: 36px;
+        width: 80px;
+        height: 80px;
+    }
+
+    #service h2 {
+        font-size: 14px;
     }
 }
