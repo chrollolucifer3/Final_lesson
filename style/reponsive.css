@@ -22,7 +22,7 @@
         flex-basis: 50%;
     }
 
-    .service__content {
+    .service__content, .partners__content {
         padding-bottom: 30px;
     }
 
