@@ -80,6 +80,10 @@ a {
     line-height: 76px;
 }
 
+.pd-10 {
+    padding-bottom: 20px;
+}
+
 .text-muted {
     color: white!important;
 }
