@@ -331,12 +331,12 @@ b{
     overflow: hidden;
 }
 
-.card .card-img-top {
+#properties .card .card-img-top {
     transition: transform 0.5s;
 }
 
-.card:hover .card-img-top {
-    transform: scale(1.1); /* Điều chỉnh giá trị tùy ý để phóng to hơn hoặc ít hơn */
+#properties .card:hover .card-img-top {
+    transform: scale(1.1); 
 }
 
 .pd-bot {
@@ -358,7 +358,7 @@ b{
     border-color: #50c594
 }
 
-.card .card-img-top {
+#properties .card .card-img-top {
     width: 100%;
     height: 250px;
     object-fit: cover;
