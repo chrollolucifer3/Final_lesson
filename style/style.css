@@ -22,14 +22,6 @@ a {
     background-color: white!important;
 }
 
-.fixed-top {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1030;
-}
-
 .bg-body-tertiary {
     --bs-bg-opacity: 1;
     background-color: rgba(var(--bs-tertiary-bg-rgb),var(--bs-bg-opacity))!important;
@@ -107,7 +99,7 @@ a {
 }
 
 .section {
-    padding: 100px 0px 100px;
+    padding: 130px 0px 100px;
     position: relative;
 }
 
@@ -366,4 +358,22 @@ b{
     width: 100%;
     height: 250px;
     object-fit: cover;
+}
+
+/* Phần back top */
+
+#back-top {
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    background-color: #50c594;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
 }
