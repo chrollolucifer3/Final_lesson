@@ -376,4 +376,6 @@ b{
     bottom: 20px;
     right: 20px;
     cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s;
 }

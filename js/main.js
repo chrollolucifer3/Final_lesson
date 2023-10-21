@@ -29,17 +29,20 @@ $('.carousel-5').owlCarousel({
 //Phần back-top
 $(document).ready(function() {
     $(window).scroll(function() {
-        if($(this).scrollTop()) {
-            $('#back-top').fadeIn();
+        if ($(this).scrollTop()) {
+            $('#back-top').css('opacity', '1'); // Hiển thị nút
         } else {
-            $('#back-top').fadeOut();
+            $('#back-top').css('opacity', '0'); // Ẩn nút
         }
-    })
+    });
 
     $('#back-top').click(function() {
-        $('html, body').animate( {
+        $('html, body').animate({
             scrollTop: 0
-        }, 300)
-    })
-})
+        }, 300);
+    });
+});
+
+
+
 
