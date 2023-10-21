@@ -43,7 +43,7 @@
                     <li class="nav-item"><a href="#" class="nav-link">Pages</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
                 </ul>
-                <div><a href="" class="btn btn-sm nav-btn btn-primary mb-2 mb-lg-0 ms-auto">Contact Us</a></div>
+                <div><a href="#" id="openModalButton" class="btn btn-sm nav-btn btn-primary mb-2 mb-lg-0 ms-auto">Contact Us</a></div>
             </div>
         </div>
     </nav>
@@ -586,8 +586,50 @@
     <div id="back-top">
         <i class="fa-solid fa-angle-up"></i>
     </div>
-</body>
 
+    <!-- Contact Us form -->
+    <div class="modal fade show" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-modal="true" role="dialog">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Send your comment</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form method="post" name="myForm" onsubmit="return validateForm()">
+                        <span id="error-msg"></span>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label class="fw-medium form-label" for="name">Name</label>
+                                        <input type="text" class="form-control" placeholder="Your name" id="name">
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label class="fw-medium form-label" for="email">Email</label>
+                                        <input type="email" class="form-control" placeholder="Your email" id="email">
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label class="fw-medium form-label" for="number">Contact</label>
+                                        <input type="text" class="form-control" placeholder="Your phone number" id="number">
+                                    </div>
+                                <div class="col-12 mb-3">
+                                        <label class="fw-medium form-label" for="comments">Message</label>
+                                        <textarea class="form-control" id="comments" placeholder="Enter your message..." rows="5"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="submit" id="submit" name="send" class="btn btn-primary mt-2" value="Send Comment">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-backdrop fade show"></div>
+</body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
   integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
 </script>
@@ -597,5 +639,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="./js/main.js"></script>
 <script src="./js/animation.js"></script>
+<script src="./js/contact_form.js"></script>
 </body>
 </html>
