@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <!-- OWl slide -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link css -->
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/reponsive.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/properties.css">
+    <!-- link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Phần navbar top -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="navbar">
+        <div class="container">
+            <a href="./index.html" class="navbar-brand"><img src="./img/logo.png" alt="" height="22"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a href="./index.html" aria-current="page" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Properties</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Pages</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                </ul>
+                <div><a href="#" id="openModalButton" class="btn btn-sm nav-btn btn-primary mb-2 mb-lg-0 ms-auto">Contact Us</a></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Phần product properties -->
+    <section class="section" id="product">
+        <div class="container">
+            <div class="product__title">
+                <h1 class="fontNeuron blockH text-uppercase">
+                    <span class="active">Our</span>
+                    <span class="textSecondary">PROPERTIES</span>
+                    <b></b>
+            </div>
+            <div class="row d-flex flex-wrap row-revers">
+                <div class="col-md-8 sidebar-right">
+                    <div class="group-tab">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">All</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">For Sale</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">For Rent</button>
+                            </li>
+                          </ul>
+                          <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                                <div class="row">
+                                    <div class="col-md-6 pd-bot">
+                                        <div class="card">
+                                            <img src="./img/canho1.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <h5 class="card-title active">Apartment</h5>
+                                              <p class="card-text">This is an apartment in the city of Barcelona, located near the beach with a stunning view. </p>
+                                              <p class="card-text text-dark"><i class="fa-solid fa-location-dot"></i> Av. Diagonal, 445, 08036 Barcelona, Spain</p>
+                                              <p class="card-text d-flex justify-content-between align-items-center"><span><span class="active text-large">$ 490,000</span> <span class="text-dark">/ monthly</span></span> <a href="#" class="btn btn-sm btn-primary">Rent now</a></p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                              <li class="list-group-item d-flex justify-content-between align-item-center">
+                                                <p class="text-dark">Area <br> 200 m&sup2</p>
+                                                <p class="text-dark">Beds <br> 4</p>
+                                                <p class="text-dark">Room <br> 4</p>
+                                              </li>
+                                            </ul>   
+                                          </div>
+                                    </div>
+                                    <div class="col-md-6 pd-bot">
+                                        <div class="card">
+                                            <img src="./img/canho2.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <h5 class="card-title active">Apartment</h5>
+                                              <p class="card-text">This is an apartment in the city of Porto, located near the beach with a stunning view. </p>
+                                              <p class="card-text text-dark"><i class="fa-solid fa-location-dot"></i> Av. Diagonal, 445, 08036 Barcelona, Spain</p>
+                                              <p class="card-text d-flex justify-content-between align-items-center"><span><span class="active text-large">$ 490,000</span></span> <a href="#" class="btn btn-sm btn-primary">Buy Now</a></p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                              <li class="list-group-item d-flex justify-content-between align-item-center">
+                                                <p class="text-dark">Area <br> 100 m&sup2</p>
+                                                <p class="text-dark">Beds <br> 2</p>
+                                                <p class="text-dark">Room <br> 2</p>
+                                              </li>
+                                            </ul>   
+                                          </div>
+                                    </div>
+                                    <div class="col-md-6 pd-bot">
+                                        <div class="card">
+                                            <img src="./img/canho3.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <h5 class="card-title active">Apartment</h5>
+                                              <p class="card-text">This is an apartment in the city of Munich, located near the beach with a stunning view. </p>
+                                              <p class="card-text text-dark"><i class="fa-solid fa-location-dot"></i> Av. Diagonal, 445, 08036 Barcelona, Spain</p>
+                                              <p class="card-text d-flex justify-content-between align-items-center"><span><span class="active text-large">$ 490,000</span> <span class="text-dark">/ monthly</span></span> <a href="#" class="btn btn-sm btn-primary">Rent now</a></p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                              <li class="list-group-item d-flex justify-content-between align-item-center">
+                                                <p class="text-dark">Area <br> 150 m&sup2</p>
+                                                <p class="text-dark">Beds <br> 3</p>
+                                                <p class="text-dark">Room <br> 4</p>
+                                              </li>
+                                            </ul>   
+                                          </div>
+                                    </div>
+                                    <div class="col-md-6 pd-bot">
+                                        <div class="card">
+                                            <img src="./img/canho4.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <h5 class="card-title active">Apartment</h5>
+                                              <p class="card-text">This is an apartment in the city of Paris, located near the beach with a stunning view. </p>
+                                              <p class="card-text text-dark"><i class="fa-solid fa-location-dot"></i> Av. Diagonal, 445, 08036 Paris, France</p>
+                                              <p class="card-text d-flex justify-content-between align-items-center"><span><span class="active text-large">$ 490,000</span> <span class="text-dark">/ monthly</span></span> <a href="#" class="btn btn-sm btn-primary">Rent now</a></p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                              <li class="list-group-item d-flex justify-content-between align-item-center">
+                                                <p class="text-dark">Area <br> 300 m&sup2</p>
+                                                <p class="text-dark">Beds <br> 4</p>
+                                                <p class="text-dark">Room <br> 4</p>
+                                              </li>
+                                            </ul>   
+                                          </div>
+                                    </div>
+                                    <div class="col-md-6 pd-bot">
+                                        <div class="card">
+                                            <img src="./img/canho5.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <h5 class="card-title active">Apartment</h5>
+                                              <p class="card-text">This is an apartment in the city of Rome, located near the beach with a stunning view. </p>
+                                              <p class="card-text text-dark"><i class="fa-solid fa-location-dot"></i> Av. Diagonal, 445, 08036 Rome, Italy</p>
+                                              <p class="card-text d-flex justify-content-between align-items-center"><span><span class="active text-large">$ 490,000</span></span> <a href="#" class="btn btn-sm btn-primary">Buy Now</a></p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                              <li class="list-group-item d-flex justify-content-between align-item-center">
+                                                <p class="text-dark">Area <br> 200 m&sup2</p>
+                                                <p class="text-dark">Beds <br> 4</p>
+                                                <p class="text-dark">Room <br> 4</p>
+                                              </li>
+                                            </ul>   
+                                          </div>
+                                    </div>
+                                    <div class="col-md-6 pd-bot">
+                                        <div class="card">
+                                            <img src="./img/canho6.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <h5 class="card-title active">Apartment</h5>
+                                              <p class="card-text">This is an apartment in the city of London, located near the beach with a stunning view. </p>
+                                              <p class="card-text text-dark"><i class="fa-solid fa-location-dot"></i> Av. Diagonal, 445, 08036 London, UK</p>
+                                              <p class="card-text d-flex justify-content-between align-items-center"><span><span class="active text-large">$ 490,000</span> <span class="text-dark">/ monthly</span></span> <a href="#" class="btn btn-primary">Rent Now</a></p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                              <li class="list-group-item d-flex justify-content-between align-item-center">
+                                                <p class="text-dark">Area <br> 200 m&sup2</p>
+                                                <p class="text-dark">Beds <br> 4</p>
+                                                <p class="text-dark">Room <br> 4</p>
+                                              </li>
+                                            </ul>   
+                                          </div>
+                                    </div>
+                                </div>
+                                <nav aria-label="...">
+                                    <ul class="pagination justify-content-end">
+                                      <li class="page-item disabled">
+                                        <span class="page-link">Previous</span>
+                                      </li>
+                                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                      <li class="page-item active" aria-current="page">
+                                        <span class="page-link">2</span>
+                                      </li>
+                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                      <li class="page-item">
+                                        <a class="page-link" href="#">Next</a>
+                                      </li>
+                                    </ul>
+                                  </nav>
+                            </div>
+                            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                                <div class="row">
+                                    <div class="col-md-6 pd-bot">
+                                        <div class="card">
+                                            <img src="./img/canho5.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <h5 class="card-title active">Apartment</h5>
+                                              <p class="card-text">This is an apartment in the city of Rome, located near the beach with a stunning view. </p>
+                                              <p class="card-text text-dark"><i class="fa-solid fa-location-dot"></i> Av. Diagonal, 445, 08036 Rome, Italy</p>
+                                              <p class="card-text d-flex justify-content-between align-items-center"><span><span class="active text-large">$ 490,000</span></span> <a href="#" class="btn btn-sm btn-primary">Buy Now</a></p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                              <li class="list-group-item d-flex justify-content-between align-item-center">
+                                                <p class="text-dark">Area <br> 200 m&sup2</p>
+                                                <p class="text-dark">Beds <br> 4</p>
+                                                <p class="text-dark">Room <br> 4</p>
+                                              </li>
+                                            </ul>   
+                                          </div>
+                                    </div>
+                                    <div class="col-md-6 pd-bot">
+                                        <div class="card">
+                                            <img src="./img/canho2.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <h5 class="card-title active">Apartment</h5>
+                                              <p class="card-text">This is an apartment in the city of Porto, located near the beach with a stunning view. </p>
+                                              <p class="card-text text-dark"><i class="fa-solid fa-location-dot"></i> Av. Diagonal, 445, 08036 Barcelona, Spain</p>
+                                              <p class="card-text d-flex justify-content-between align-items-center"><span><span class="active text-large">$ 490,000</span></span> <a href="#" class="btn btn-sm btn-primary">Buy Now</a></p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                              <li class="list-group-item d-flex justify-content-between align-item-center">
+                                                <p class="text-dark">Area <br> 100 m&sup2</p>
+                                                <p class="text-dark">Beds <br> 2</p>
+                                                <p class="text-dark">Room <br> 2</p>
+                                              </li>
+                                            </ul>   
+                                          </div>
+                                    </div>
+                                    <div class="col-md-6 pd-bot">
+                                        <div class="card">
+                                            <img src="./img/canho2.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <h5 class="card-title active">Apartment</h5>
+                                              <p class="card-text">This is an apartment in the city of Porto, located near the beach with a stunning view. </p>
+                                              <p class="card-text text-dark"><i class="fa-solid fa-location-dot"></i> Av. Diagonal, 445, 08036 Barcelona, Spain</p>
+                                              <p class="card-text d-flex justify-content-between align-items-center"><span><span class="active text-large">$ 490,000</span></span> <a href="#" class="btn btn-sm btn-primary">Buy Now</a></p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                              <li class="list-group-item d-flex justify-content-between align-item-center">
+                                                <p class="text-dark">Area <br> 100 m&sup2</p>
+                                                <p class="text-dark">Beds <br> 2</p>
+                                                <p class="text-dark">Room <br> 2</p>
+                                              </li>
+                                            </ul>   
+                                          </div>
+                                    </div>
+                                    <div class="col-md-6 pd-bot">
+                                        <div class="card">
+                                            <img src="./img/canho2.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <h5 class="card-title active">Apartment</h5>
+                                              <p class="card-text">This is an apartment in the city of Porto, located near the beach with a stunning view. </p>
+                                              <p class="card-text text-dark"><i class="fa-solid fa-location-dot"></i> Av. Diagonal, 445, 08036 Barcelona, Spain</p>
+                                              <p class="card-text d-flex justify-content-between align-items-center"><span><span class="active text-large">$ 490,000</span></span> <a href="#" class="btn btn-sm btn-primary">Buy Now</a></p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                              <li class="list-group-item d-flex justify-content-between align-item-center">
+                                                <p class="text-dark">Area <br> 100 m&sup2</p>
+                                                <p class="text-dark">Beds <br> 2</p>
+                                                <p class="text-dark">Room <br> 2</p>
+                                              </li>
+                                            </ul>   
+                                          </div>
+                                    </div>
+                                </div>
+                                <nav aria-label="...">
+                                    <ul class="pagination justify-content-end">
+                                      <li class="page-item disabled">
+                                        <span class="page-link">Previous</span>
+                                      </li>
+                                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                      <li class="page-item active" aria-current="page">
+                                        <span class="page-link">2</span>
+                                      </li>
+                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                      <li class="page-item">
+                                        <a class="page-link" href="#">Next</a>
+                                      </li>
+                                    </ul>
+                                  </nav>
+                            </div>
+                            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                                <div class="row">
+                                    <div class="col-md-6 pd-bot">
+                                        <div class="card">
+                                            <img src="./img/canho6.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <h5 class="card-title active">Apartment</h5>
+                                              <p class="card-text">This is an apartment in the city of London, located near the beach with a stunning view. </p>
+                                              <p class="card-text text-dark"><i class="fa-solid fa-location-dot"></i> Av. Diagonal, 445, 08036 London, UK</p>
+                                              <p class="card-text d-flex justify-content-between align-items-center"><span><span class="active text-large">$ 490,000</span> <span class="text-dark">/ monthly</span></span> <a href="#" class="btn btn-primary">Rent Now</a></p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                              <li class="list-group-item d-flex justify-content-between align-item-center">
+                                                <p class="text-dark">Area <br> 200 m&sup2</p>
+                                                <p class="text-dark">Beds <br> 4</p>
+                                                <p class="text-dark">Room <br> 4</p>
+                                              </li>
+                                            </ul>   
+                                          </div>
+                                    </div>
+                                    <div class="col-md-6 pd-bot">
+                                        <div class="card">
+                                            <img src="./img/canho6.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <h5 class="card-title active">Apartment</h5>
+                                              <p class="card-text">This is an apartment in the city of London, located near the beach with a stunning view. </p>
+                                              <p class="card-text text-dark"><i class="fa-solid fa-location-dot"></i> Av. Diagonal, 445, 08036 London, UK</p>
+                                              <p class="card-text d-flex justify-content-between align-items-center"><span><span class="active text-large">$ 490,000</span> <span class="text-dark">/ monthly</span></span> <a href="#" class="btn btn-primary">Rent Now</a></p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                              <li class="list-group-item d-flex justify-content-between align-item-center">
+                                                <p class="text-dark">Area <br> 200 m&sup2</p>
+                                                <p class="text-dark">Beds <br> 4</p>
+                                                <p class="text-dark">Room <br> 4</p>
+                                              </li>
+                                            </ul>   
+                                          </div>
+                                    </div>
+                                    <div class="col-md-6 pd-bot">
+                                        <div class="card">
+                                            <img src="./img/canho6.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <h5 class="card-title active">Apartment</h5>
+                                              <p class="card-text">This is an apartment in the city of London, located near the beach with a stunning view. </p>
+                                              <p class="card-text text-dark"><i class="fa-solid fa-location-dot"></i> Av. Diagonal, 445, 08036 London, UK</p>
+                                              <p class="card-text d-flex justify-content-between align-items-center"><span><span class="active text-large">$ 490,000</span> <span class="text-dark">/ monthly</span></span> <a href="#" class="btn btn-primary">Rent Now</a></p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                              <li class="list-group-item d-flex justify-content-between align-item-center">
+                                                <p class="text-dark">Area <br> 200 m&sup2</p>
+                                                <p class="text-dark">Beds <br> 4</p>
+                                                <p class="text-dark">Room <br> 4</p>
+                                              </li>
+                                            </ul>   
+                                          </div>
+                                    </div>
+                                    <div class="col-md-6 pd-bot">
+                                        <div class="card">
+                                            <img src="./img/canho6.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <h5 class="card-title active">Apartment</h5>
+                                              <p class="card-text">This is an apartment in the city of London, located near the beach with a stunning view. </p>
+                                              <p class="card-text text-dark"><i class="fa-solid fa-location-dot"></i> Av. Diagonal, 445, 08036 London, UK</p>
+                                              <p class="card-text d-flex justify-content-between align-items-center"><span><span class="active text-large">$ 490,000</span> <span class="text-dark">/ monthly</span></span> <a href="#" class="btn btn-primary">Rent Now</a></p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                              <li class="list-group-item d-flex justify-content-between align-item-center">
+                                                <p class="text-dark">Area <br> 200 m&sup2</p>
+                                                <p class="text-dark">Beds <br> 4</p>
+                                                <p class="text-dark">Room <br> 4</p>
+                                              </li>
+                                            </ul>   
+                                          </div>
+                                    </div>
+                                    <div class="col-md-6 pd-bot">
+                                        <div class="card">
+                                            <img src="./img/canho6.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <h5 class="card-title active">Apartment</h5>
+                                              <p class="card-text">This is an apartment in the city of London, located near the beach with a stunning view. </p>
+                                              <p class="card-text text-dark"><i class="fa-solid fa-location-dot"></i> Av. Diagonal, 445, 08036 London, UK</p>
+                                              <p class="card-text d-flex justify-content-between align-items-center"><span><span class="active text-large">$ 490,000</span> <span class="text-dark">/ monthly</span></span> <a href="#" class="btn btn-primary">Rent Now</a></p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                              <li class="list-group-item d-flex justify-content-between align-item-center">
+                                                <p class="text-dark">Area <br> 200 m&sup2</p>
+                                                <p class="text-dark">Beds <br> 4</p>
+                                                <p class="text-dark">Room <br> 4</p>
+                                              </li>
+                                            </ul>   
+                                          </div>
+                                    </div>
+                                    <div class="col-md-6 pd-bot">
+                                        <div class="card">
+                                            <img src="./img/canho6.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <h5 class="card-title active">Apartment</h5>
+                                              <p class="card-text">This is an apartment in the city of London, located near the beach with a stunning view. </p>
+                                              <p class="card-text text-dark"><i class="fa-solid fa-location-dot"></i> Av. Diagonal, 445, 08036 London, UK</p>
+                                              <p class="card-text d-flex justify-content-between align-items-center"><span><span class="active text-large">$ 490,000</span> <span class="text-dark">/ monthly</span></span> <a href="#" class="btn btn-primary">Rent Now</a></p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                              <li class="list-group-item d-flex justify-content-between align-item-center">
+                                                <p class="text-dark">Area <br> 200 m&sup2</p>
+                                                <p class="text-dark">Beds <br> 4</p>
+                                                <p class="text-dark">Room <br> 4</p>
+                                              </li>
+                                            </ul>   
+                                          </div>
+                                    </div>
+                                </div>
+                                <nav aria-label="...">
+                                    <ul class="pagination justify-content-end">
+                                      <li class="page-item disabled">
+                                        <span class="page-link">Previous</span>
+                                      </li>
+                                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                      <li class="page-item active" aria-current="page">
+                                        <span class="page-link">2</span>
+                                      </li>
+                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                      <li class="page-item">
+                                        <a class="page-link" href="#">Next</a>
+                                      </li>
+                                    </ul>
+                                  </nav>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-md-4 sidebar-left">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hết blog detail -->
+
+       <!-- Footer 1 -->
+       <footer class="footer bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#">
+                            <img src="./img/logo.png" alt="" height="22">
+                        </a>
+                    <h6 class="mt-4 pt-2 text-white">Locate Us </h6>
+                    <p class="mt-3 text-muted fs-15"><i class="fa-solid fa-location-dot fa-xs"></i> Av. de Pau Casals<br> 19, 08021 Barcelona<br> Spain
+                    </p>
+                    <h6 class="text-white fw-medium mt-4">Contact</h6>
+                    <ul class="list-unstyled list-inline mb-4 pb-3 hero-link">
+                        <li class="list-inline-item border-0 p-2"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook fb icon-sm"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a></li>
+                        <li class="list-inline-item border-0 p-2"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram inst icon-sm"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a></li>
+                        <li class="list-inline-item border-0 p-2"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter tw icon-sm"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a></li>
+                        <li class="list-inline-item border-0 p-2"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github git icon-sm"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6 margin-bot">
+                    <h6 class="mb-3 mt-sm-0 mt-5 text-white">Others Links</h6>
+                    <ul class="list-unstyled footer-list">
+                        <li class="py-2"><a class="fs-15" href="#"><span class="icon fs-12 me-2">∎</span> About Us</a></li>
+                        <li class="py-2"><a class="fs-15" href="#"><span class="icon fs-12 me-2">∎</span> Contact Us</a></li>
+                        <li class="py-2"><a class="fs-15" href="#"><span class="icon fs-12 me-2">∎</span> Pricing</a></li>
+                        <li class="py-2"><a class="fs-15" href="#"><span class="icon fs-12 me-2">∎</span> Privacy Policy</a></li>
+                        <li class="py-2"><a class="fs-15" href="#"><span class="icon fs-12 me-2">∎</span> Terms &amp; Condition</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 offset-lg-1">
+                    <div class="card rounded border-0 mt-sm-0">
+                        <div class="map rounded">
+                            <a href="#" class="btn btn-light text-dark position-absolute top-50 start-50 translate-middle map-btn">View Map</a>
+                            <div class="bg-overlay rounded position-absolute top-0 right-0 bottom-0 left-0"></div>
+                            <iframe class="rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.6862912792185!2d2.1202448754998304!3d41.380899996398334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a498f576297baf%3A0x44f65330fe1b04b9!2zU8OibiB24bqtbiDEkeG7mW5nIENhbXAgTm91!5e0!3m2!1svi!2s!4v1697740218598!5m2!1svi!2s" width="100%" height="230" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Hết Footer 1 -->
+    <!-- Footer 2 -->
+    <div class="footer-alt bg-dark">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-12">
+                    <span class="fs-15">2023 © by <a href="#" class="fs-15">Cường</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hết footer 2 -->
+
+    <!-- Back top -->
+    <div id="back-top">
+        <i class="fa-solid fa-angle-up"></i>
+    </div>
+    <!-- Hết back top -->
+
+    <!-- Contact Us form -->
+    <div class="modal fade show" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-modal="true" role="dialog">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Send your comment</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form method="post" name="myForm" onsubmit="return validateForm()">
+                        <span id="error-msg"></span>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label class="fw-medium form-label" for="name">Name</label>
+                                        <input type="text" class="form-control" placeholder="Your name" id="name">
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label class="fw-medium form-label" for="email">Email</label>
+                                        <input type="email" class="form-control" placeholder="Your email" id="email">
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label class="fw-medium form-label" for="number">Contact</label>
+                                        <input type="text" class="form-control" placeholder="Your phone number" id="number">
+                                    </div>
+                                <div class="col-12 mb-3">
+                                        <label class="fw-medium form-label" for="comments">Message</label>
+                                        <textarea class="form-control" id="comments" placeholder="Enter your message..." rows="5"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="submit" id="submit" name="send" class="btn btn-primary mt-2" value="Send Comment">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-backdrop fade show"></div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+  integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">   
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./js/main.js"></script>
+<script src="./js/animation.js"></script>
+<script src="./js/contact_form.js"></script>
+</body>
+</html>
