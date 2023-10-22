@@ -45,7 +45,7 @@
         margin-bottom: 20px;
     }
 
-    .col-md-4 {
+    #properties .col-md-4 {
         flex-basis: 80%!important;
         margin: 0 auto;
     }
