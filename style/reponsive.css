@@ -49,6 +49,10 @@
         flex-basis: 90%!important;
         margin: 0 auto;
     }
+
+    .sidebar__right {
+        padding: 24px 12px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -95,7 +99,7 @@
     }
 
     .col-md-4 {
-        flex-basis: 90%!important;
+        flex-basis: 100%!important;
         margin: 0 auto;
     }
 

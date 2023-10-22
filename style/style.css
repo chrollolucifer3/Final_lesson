@@ -112,6 +112,7 @@ a {
 #service, #place, #properties {
     background-color: #E4F1ED;
 }
+
 .blockH {
     display: flex;
     align-items: center;
