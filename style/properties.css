@@ -1,9 +1,26 @@
 /* reponsive cho properties */
 @media (max-width: 990px) {
-    .col-md-6 {
+    #product .col-md-8  {
         width: 90%!important;
         margin: 0 auto;
     }
+
+    #product .col-md-4 {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .sidebar-left {
+        margin-top: 8px!important;
+    }
+
+    .sidebar-left img {
+        width: auto!important;
+    }
+}
+
+#product {
+    background-color: #E4F1ED;
 }
 
 .nav-tabs {
@@ -14,4 +31,53 @@
     width: 100%;
     height: 250px;
     object-fit: cover;
+}
+
+.sidebar-left img {
+    width: 50%;
+    height: 100px;
+    object-fit: cover;
+}
+
+#product img {
+    cursor: pointer;
+}
+
+.sidebar-left p {
+    margin-bottom: 5px;
+}
+
+.sidebar-left .margin-top {
+    margin-top: 24px;
+}
+
+.sidebar-left__recent, .sidebar-left__tag {
+    padding: 12px;
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: 24px;
+}
+
+.text-small {
+    line-height: 3;
+}
+
+.text-small span {
+    margin-right: 4px;
+    font-size: 13px;
+    padding: 4px 8px;
+    background-color: rgb(122, 122, 122, 0.7);
+    border: none;
+}
+
+.rencent__title h6 {
+    margin-top: 12px;
+}
+
+#product .card .card-img-top {
+    transition: transform 0.5s;
+}
+
+#product .card:hover .card-img-top {
+    transform: scale(1.1); 
 }

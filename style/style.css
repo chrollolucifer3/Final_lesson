@@ -63,7 +63,7 @@ a {
 #home {
     background-image: url(https://live.staticflickr.com/65535/53271167366_13bd0b8641_k.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     background-position: center center center;
 }
 
