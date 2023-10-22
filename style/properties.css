@@ -17,6 +17,11 @@
     .sidebar-left img {
         width: auto!important;
     }
+
+    .col-md-3 {
+        width: 33%;
+        padding: 12px;
+    }
 }
 
 #product {
@@ -80,4 +85,32 @@
 
 #product .card:hover .card-img-top {
     transform: scale(1.1); 
+}
+
+/* Phần form */
+
+.advanced i {
+    background-color: aqua;
+    padding: 2px;
+    border-radius: 50%;
+    color: white;
+}
+
+.checkbox {
+    margin-top: 12px;
+}
+
+.checkbox .form-check {
+    margin-top: 12px;
+}
+
+/* CSS */
+.checkbox {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.checkbox.visible {
+    max-height: 1000px; /* Đặt giá trị lớn đủ lớn để hiển thị tất cả nội dung */
 }
