@@ -354,7 +354,7 @@ b{
     border-color: #50c594
 }
 
-#properties .card .card-img-top, #product .card .card-img-top {
+#properties .card .card-img-top {
     width: 100%;
     height: 250px;
     object-fit: cover;
