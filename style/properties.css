@@ -68,7 +68,7 @@
     margin-top: 24px;
 }
 
-.sidebar-left__recent, .sidebar-left__tag {
+.sidebar-left__recent, .sidebar-left__tag, .sidebar-left__Catalog {
     padding: 12px;
     border-radius: 5px;
     background-color: white;
@@ -117,12 +117,36 @@
 }
 
 /* CSS */
+
+.hiden {
+    display: none;
+}
+
 .checkbox {
     max-height: 0;
     overflow: hidden;
-    transition: all 0.5s ease-in-out;
+    transition: max-height 0.5s ease; /* Điều chỉnh thời gian transition tại đây */
 }
 
 .checkbox.visible {
     max-height: 1000px; /* Đặt giá trị lớn đủ lớn để hiển thị tất cả nội dung */
 }
+
+.fa-plus {
+    transition: transform 0.5s ease; /* Hiệu ứng biểu tượng */
+}
+
+.fa-minus {
+    transform: rotate(180deg); /* Xoay biểu tượng khi hiển thị checkbox */
+}
+
+/* Phần catalog */
+
+.Catalog__content p {
+    margin-top: 12px;
+}
+
+.Catalog__content p:hover {
+    color: #50c594!important;
+}
+
