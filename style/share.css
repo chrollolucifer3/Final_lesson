@@ -46,6 +46,10 @@ b{
     margin-top: 24px;
 }
 
+.card-title:hover a{
+    color: #50c594;
+}
+
 /* Phần back top */
 
 #back-top {
