@@ -1,0 +1,37 @@
+@media (max-width: 990px) {
+    .col-md-8, .col-md-4 {
+        width: 90%!important;
+        margin: 0 auto;
+    }
+}
+.bar__right-title, .bar-right__detail, .bar-right__description, .bar-right__floor {
+    border-bottom: 1px solid rgb(133, 133, 133, .5);
+    padding: 24px 0;
+}
+
+
+.bar__left form .col-md-12:first-child {
+    margin-top: 0;
+}
+
+.bar__left , .bar__right {
+    padding: 12px;
+}
+
+.bar__right .text-dark {
+    margin-bottom: 0px!important;
+}
+
+.map__content {
+    margin-left: 12px;
+}
+
+.bar__left .g-3 {
+    padding: 12px!important;
+}
+
+.bar__left img {
+    width: 50%;
+    height: 100px;
+    object-fit: cover;
+}

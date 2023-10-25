@@ -64,33 +64,6 @@
     margin-bottom: 5px;
 }
 
-.sidebar-left .margin-top {
-    margin-top: 24px;
-}
-
-.sidebar-left__recent, .sidebar-left__tag, .sidebar-left__Catalog {
-    padding: 12px;
-    border-radius: 5px;
-    background-color: white;
-    margin-bottom: 12px;
-}
-
-.text-small {
-    line-height: 3;
-}
-
-.text-small span {
-    margin-right: 4px;
-    font-size: 13px;
-    padding: 4px 8px;
-    background-color: rgb(122, 122, 122, 0.7);
-    border: none;
-}
-
-/* .rencent__title h6 {
-    margin-top: 12px;
-} */
-
 #product .card .card-img-top {
     transition: transform 0.5s;
 }
@@ -148,5 +121,9 @@
 
 .Catalog__content p:hover {
     color: #50c594!important;
+}
+
+.card-title:hover a{
+    color: #50c594;
 }
 

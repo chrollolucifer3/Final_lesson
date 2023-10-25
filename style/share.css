@@ -1,0 +1,73 @@
+b{
+    display: block;
+    flex: 1;
+    height: 2px;
+    background-color:#50c594;
+    opacity: .5;
+}
+
+.sidebar-left .margin-top {
+    margin-top: 24px;
+}
+
+.sidebar-left__recent, .sidebar-left__tag, .sidebar-left__Catalog {
+    padding: 12px;
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: 24px;
+}
+
+.text-small {
+    line-height: 3;
+}
+
+.sidebar-left p {
+    margin-bottom: 5px;
+}
+
+.text-small span {
+    margin-right: 4px;
+    font-size: 13px;
+    padding: 4px 8px;
+    background-color: rgb(122, 122, 122, 0.7);
+    border: none;
+}
+
+.margin-right {
+    margin-right: 12px;
+}
+
+.btn-info {
+    color: white!important;
+    padding: 4px 8px!important;
+}
+
+.margin-top {
+    margin-top: 24px;
+}
+
+/* Phần back top */
+
+#back-top {
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    background-color: #50c594;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#exampleModal, .modal-backdrop {
+    display: none;
+}
+
+
