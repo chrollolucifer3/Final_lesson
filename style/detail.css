@@ -4,6 +4,13 @@
         margin: 0 auto;
     }
 }
+
+@media (max-width: 400px) {
+    .bar-right__floor img {
+        width: 90%;
+    }
+}
+
 .bar__right-title, .bar-right__detail, .bar-right__description, .bar-right__floor {
     border-bottom: 1px solid rgb(133, 133, 133, .5);
     padding: 24px 0;
