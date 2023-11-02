@@ -1,0 +1,18 @@
+.introduce {
+    text-align: justify!important;
+}
+
+#mission {
+    background-color: #E4F1ED;
+}
+
+#agent {
+    background-color: white!important;
+}
+
+@media (max-width: 990px) {
+    .col-md-6 {
+        flex-basis: 100%;
+        margin: 0 auto;
+    }
+}

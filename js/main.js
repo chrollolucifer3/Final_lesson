@@ -65,6 +65,28 @@ $(document).ready(function() {
     });
 });
 
-
-
-
+$(document).ready(function() {
+    $("#search-icon").click(function(e) {
+      e.stopPropagation();
+      $("#search-input").css("visibility", "visible");
+      $("#search-input").focus();
+    });
+  
+    $(document).click(function(event) {
+      if (!$(event.target).closest("#search-button").length && !$(event.target).is("#search-input")) {
+        if ($("#search-input").is(":visible")) {
+          $("#search-input").css("visibility", "hidden");
+        }
+      }
+    });
+  
+    $("#search-button").click(function(event) {
+      event.stopPropagation();
+    });
+  });
+  
+  
+  
+  
+  
+  
