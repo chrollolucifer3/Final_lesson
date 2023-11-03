@@ -13,31 +13,54 @@ body {
 }
 
 .search-button {
-    position: relative;
-    display: inline-block;  
+    display: flex;
+    justify-content: flex-start!important;
+    align-items: center;
 }
 
 .search-button i {
-    padding: 7px;
+    margin-right: 12px;
+    padding: 8px;
     border: none;
     color: white;
     border-radius: 50%!important;
-    position: absolute;
-    top: 2px;
-    right: 5px;
     cursor: pointer;
     background-color: #50c594;
+    transition: background-color 0.3s;
+}
+
+.search-button i.close {
+    background-color: #e74c3c;
+}
+
+.input-container {
+    overflow: hidden;
 }
 
 .rounded-input {
-    visibility: hidden;
-    position: absolute;
-    border-radius: 10px 10px 10px 10px;
-    position: relative;
-    padding: 2px;
-    outline: none;
+    width: 0;
+    padding: 5px;
     border: 2px solid #50c594;
+    border-radius: 10px;
+    outline: none;
+    transition: width 0.3s;
+    margin-right: 5px;
+    animation-name: slide-in;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
 }
+
+@keyframes slide-in {
+    from {
+        width: 0;
+        transform: translateX(100%);
+    }
+    to {
+        width: 150px;
+        transform: translateX(0);
+    }
+}
+
 
 a {
     text-decoration: none;

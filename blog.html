@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="./style/properties.css">
     <link rel="stylesheet" href="./style/blog.css">
     <link rel="stylesheet" href="./style/share.css">
+        <!-- CDN AOS JS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- link font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,8 +32,8 @@
 </head>
 
 <body>
-    <!-- Phần navbar top -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="navbar">
+    <!-- Phần navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="navbar" data-aos="fade-down" data-aos-duration="1000">
         <div class="container">
             <a href="./index.html" class="navbar-brand"><img src="./img/logo.png" alt="" height="22"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,27 +47,25 @@
                     <li class="nav-item"><a href="./blog.html" class="nav-link active">Blog</a></li>
                 </ul>
                 <div class="search-button margin-right">
+                    <input class="rounded-input" type="text" placeholder="Search..." id="search-input">
                     <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
-                    <div class="input-container">
-                      <input class="rounded-input" type="text" placeholder="Search..." id="search-input">
-                    </div>
-                  </div>
+                </div>
                 <div><a href="#" id="openModalButton" class="btn btn-sm nav-btn btn-primary mb-2 mb-lg-0 ms-auto">Contact Us</a></div>
             </div>
         </div>
     </nav>
-
+<!-- hết phần navbar -->
     <!-- Phần Blog -->
     <section class="section" id="blog">
         <div class="container">
-            <div class="blog__title">
+            <div class="blog__title" data-aos="fade-right" data-aos-duration="1000">
                 <h1 class="fontNeuron blockH text-uppercase">
                     <span class="active">Our</span>
                     <span class="textSecondary">Blog</span>
                     <b></b>
             </div>
             <div class="row d-flex flex-row-reverse">
-                <div class="col-md-8 sidebar-right">
+                <div class="col-md-8 sidebar-right" data-aos="fade-left" data-aos-duration="1000">
                     <div class="row position-relative">
                         <div class="col-md-6 mb-md-0 p-md-4">
                           <img src="./img/canho5.jpg" class="w-100" alt="...">
@@ -126,7 +126,7 @@
                         </ul>
                       </nav>
                 </div>
-                <div class="col-md-4 sidebar-left">
+                <div class="col-md-4 sidebar-left" data-aos="fade-right" data-aos-duration="1000">
                     <div class="search__form">
                             <form class="row">
                                 <div class="col-md-12">
@@ -199,11 +199,11 @@
     </section>
     <!-- Hết blog -->
 
-       <!-- Footer 1 -->
-       <footer class="footer bg-dark">
+    <!-- Footer 1 -->
+    <footer class="footer bg-dark">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-sm-6"  data-aos="fade-right" data-aos-duration="1000">
                     <a href="#">
                             <img src="./img/logo.png" alt="" height="22">
                         </a>
@@ -218,7 +218,7 @@
                         <li class="list-inline-item border-0 p-2"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github git icon-sm"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-sm-6 margin-bot">
+                <div class="col-lg-3 col-sm-6 margin-bot" data-aos="fade-up" data-aos-duration="1000">
                     <h6 class="mb-3 mt-sm-0 mt-5 text-white">Others Links</h6>
                     <ul class="list-unstyled footer-list">
                         <li class="py-2"><a class="fs-15" href="#"><span class="icon fs-12 me-2">∎</span> About Us</a></li>
@@ -228,7 +228,7 @@
                         <li class="py-2"><a class="fs-15" href="#"><span class="icon fs-12 me-2">∎</span> Terms &amp; Condition</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-4 offset-lg-1">
+                <div class="col-lg-4 offset-lg-1" data-aos="fade-left" data-aos-duration="1000">
                     <div class="card rounded border-0 mt-sm-0">
                         <div class="map rounded">
                             <a href="#" class="btn btn-light text-dark position-absolute top-50 start-50 translate-middle map-btn">View Map</a>
@@ -240,6 +240,7 @@
         </div>
     </footer>
     <!-- Hết Footer 1 -->
+    
     <!-- Footer 2 -->
     <div class="footer-alt bg-dark">
         <div class="container">
@@ -312,5 +313,8 @@
 <script src="./js/animation.js"></script>
 <script src="./js/contact_form.js"></script>
 <script src="./js/properties_form.js"></script>
-</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </html>

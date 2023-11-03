@@ -66,24 +66,46 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
+    $("#search-input").hide(); // Ẩn input ban đầu
     $("#search-icon").click(function(e) {
       e.stopPropagation();
-      $("#search-input").css("visibility", "visible");
-      $("#search-input").focus();
+      if ($("#search-input").is(":hidden")) {
+        $("#search-input").css("width", "150px");
+        $("#search-input").css("margin-right", "5px");
+        $("#search-input").show(); // Hiển thị input khi click
+        $("#search-input").css("transform", "translateX(0)"); // Hiệu ứng trượt
+        $("#search-input").focus();
+        $("#search-icon").removeClass("fa-magnifying-glass");
+        $("#search-icon").addClass("fa-times close");
+      } else {
+        $("#search-input").css("width", "0");
+        $("#search-input").css("margin-right", "0");
+        $("#search-input").css("transform", "translateX(100%)"); // Hiệu ứng trượt
+        $("#search-input").hide(); // Ẩn input khi click lại
+        $("#search-icon").removeClass("fa-times close");
+        $("#search-icon").addClass("fa-magnifying-glass");
+      }
     });
   
     $(document).click(function(event) {
-      if (!$(event.target).closest("#search-button").length && !$(event.target).is("#search-input")) {
-        if ($("#search-input").is(":visible")) {
-          $("#search-input").css("visibility", "hidden");
+      if (!$(event.target).closest(".search-button").length) {
+        if ($("#search-input").width() > 0) {
+          $("#search-input").css("width", "0");
+          $("#search-input").css("margin-right", "0");
+          $("#search-input").css("transform", "translateX(100%)"); // Hiệu ứng trượt
+          $("#search-input").hide(); // Ẩn input khi click ra ngoài
+          $("#search-icon").removeClass("fa-times close");
+          $("#search-icon").addClass("fa-magnifying-glass");
         }
       }
     });
   
-    $("#search-button").click(function(event) {
+    $(".search-button").click(function(event) {
       event.stopPropagation();
     });
   });
+  
+  
   
   
   
