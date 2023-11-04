@@ -34,7 +34,7 @@ b{
 }
 
 .margin-right {
-    margin-right: 12px;
+    margin-right: 12px!important;
 }
 
 .btn-info {
@@ -48,6 +48,10 @@ b{
 
 .card-title:hover a{
     color: #50c594;
+}
+
+.margin-bot {
+    margin-bottom: 24px;
 }
 
 /* Phần back top */
@@ -74,7 +78,28 @@ b{
     display: none;
 }
 
-#product, #agent, #ourblog, #partners, #service, #review, #mission, #page, #blog, #detail {
+#product, #agent, #ourblog, #partners, #service, #review, #mission, #page, #blog, #detail, #contact, #agent_detail {
     overflow: hidden;
 }
 
+/* Phần contact */
+
+.bar__right__recent li {
+    margin-top: 24px;
+    margin-right: 24px!important;
+}
+
+/* Phần agent detail */
+
+#agent_detail .bar__right .card {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0px;
+    border-bottom: 1px solid rgb(133, 133, 133, .5);
+    padding: 24px 0;
+}
+
+#agent_detail .decription {
+    margin-top: 24px;
+}

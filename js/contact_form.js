@@ -1,28 +1,46 @@
+// Lấy tham chiếu đến các modal và nút "Sign In" và "Sign Up"
+var signInModal = document.getElementById("signInModal");
+var signUpModal = document.getElementById("signUpModal");
+var signInButton = document.querySelector('[data-target="signInModal"]');
+var signUpButton = document.querySelector('[data-target="signUpModal"]');
+var switchToSignInLink = document.getElementById("switchToSignIn");
+var switchToSignUpLink = document.getElementById("switchToSignUp");
 
-    var openModalButton = document.getElementById('openModalButton'); 
-    var modal = document.getElementById('exampleModal'); 
-    var closeButton = modal.querySelector('.btn-close'); 
-    var overlay = document.querySelector('.modal-backdrop'); 
+// Khi người dùng click vào "Sign In," hiển thị modal Sign In và ẩn modal Sign Up
+signInButton.addEventListener("click", function (e) {
+  e.preventDefault();
+  signInModal.style.display = "block";
+  signUpModal.style.display = "none";
+});
 
-    // Sự kiện click nút "Contact Us"
-    openModalButton.addEventListener('click', function() {
-        modal.style.display = 'block'; 
-        overlay.style.display = 'block';
-    });
+// Khi người dùng click vào "Sign Up," hiển thị modal Sign Up và ẩn modal Sign In
+signUpButton.addEventListener("click", function (e) {
+  e.preventDefault();
+  signUpModal.style.display = "block";
+  signInModal.style.display = "none";
+});
 
-    // Sự kiện click nút đóng
-    closeButton.addEventListener('click', function() {
-        modal.style.display = 'none'; 
-        overlay.style.display = 'none'; 
-    });
+// Khi người dùng click vào liên kết "Sign In," chuyển đổi qua modal Sign In và ẩn modal Sign Up
+switchToSignInLink.addEventListener("click", function (e) {
+  e.preventDefault();
+  signInModal.style.display = "block";
+  signUpModal.style.display = "none";
+});
 
-    // Sự kiện click ra ngoài modal
-    window.addEventListener('click', function(event) {
-        if (event.target == modal) {
-            modal.style.display = 'none'; 
-            overlay.style.display = 'none'; 
-        }
-    });
+// Khi người dùng click vào liên kết "Sign Up," chuyển đổi qua modal Sign Up và ẩn modal Sign In
+switchToSignUpLink.addEventListener("click", function (e) {
+  e.preventDefault();
+  signUpModal.style.display = "block";
+  signInModal.style.display = "none";
+});
+
+// Khi người dùng click vào overlay (vùng xung quanh), tắt cả hai modal
+document.addEventListener("click", function (e) {
+  if (e.target === signInModal || e.target === signUpModal) {
+    e.target.style.display = "none";
+  }
+});
+
 
     // valid form
 

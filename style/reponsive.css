@@ -59,6 +59,10 @@
     .sidebar__right {
         padding: 24px 12px;
     }
+
+    .bar__right {
+        padding: 24px 12px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -109,7 +113,7 @@
         margin: 0 auto;
     }
 
-    #form__properties .row .col-md-3 {
+    #form__properties .row .col-md-3, #agent_list .col-md-3 {
         flex-basis: 100%!important;
     }
 }
