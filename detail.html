@@ -23,8 +23,7 @@
     <link rel="stylesheet" href="./style/properties.css">
     <link rel="stylesheet" href="./style/share.css">
     <link rel="stylesheet" href="./style/detail.css">
-        <!-- CDN AOS JS -->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- link font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,7 +32,7 @@
 
 <body>
     <!-- Phần navbar top -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="navbar" data-aos="fade-down" data-aos-duration="1000">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="navbar" data-aos="fade-down" data-aos-duration="2000">
         <div class="container">
             <a href="./index.html" class="navbar-brand"><img src="./img/logo.png" alt="" height="22"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,7 +40,7 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a href="./index.html" aria-current="page" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="./index.html" aria-current="page" class="nav-link active">Home</a></li>
                     <li class="nav-item"><a href="./properties.html" class="nav-link">Properties</a></li>
                     <li class="nav-item"><a href="./page.html" class="nav-link">Page</a></li>
                     <li class="nav-item"><a href="./blog.html" class="nav-link">Blog</a></li>
@@ -60,13 +59,13 @@
         <div class="container">
            <div class="row">
             <div class="bar__right col-md-8">
-                <div id="carouselExampleIndicators" class="carousel slide">
+                <div id="carouselExampleIndicators" class="carousel slide" data-aos="fade-right" data-aos-duration="2000">
                     <div class="carousel-indicators">
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
-                    <div class="carousel-inner" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="carousel-inner">
                       <div class="carousel-item active">
                         <img src="./img/canho3.jpg" class="d-block w-100" alt="...">
                       </div>
@@ -86,7 +85,7 @@
                       <span class="visually-hidden">Next</span>
                     </button>
                   </div>
-                  <div class="bar__right-title" data-aos="fade-right" data-aos-duration="1000">
+                  <div class="bar__right-title" data-aos="fade-right" data-aos-duration="2000">
                     <h2>Apartment on Barcelona</h2>
                         <div class="map d-flex justify_content-center align-items-center">
                             <img src="./img/entry-point.svg" alt="">
@@ -96,7 +95,7 @@
                             </div>
                         </div>
                   </div>
-                  <div class="bar-right__detail" data-aos="fade-right" data-aos-duration="1000">
+                  <div class="bar-right__detail" data-aos="fade-right" data-aos-duration="2000">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item d-flex justify-content-between align-item-center">
                           <p class="text-dark">Area <br> 200 m²</p>
@@ -107,9 +106,10 @@
                         </li>
                       </ul>
                   </div>
-                  <div class="bar-right__description" data-aos="fade-right" data-aos-duration="1000">
+                  <div class="bar-right__description" data-aos="fade-right" data-aos-duration="2000">
                     <h6>Description</h6>
                     <p class="text-dark">
+                        Price: <span class="active text-large">500.000$/monthly</span> <br>
                         Project Location: Av. Diagonal, 445, 08036 Barcelona, Spain <br>
                         Developer: CapitaLand. <br>
                         Architectural Design: RSP Architects Planners & Engineer (Singapore). <br>
@@ -119,12 +119,12 @@
                         Status: New
                     </p>
                   </div>
-                  <div class="bar-right__floor">
-                    <h6 data-aos="fade-right" data-aos-duration="1000">Floor</h6>
+                  <div class="bar-right__floor" data-aos="fade-right" data-aos-duration="2000">
+                    <h6>Floor</h6>
                     <div class="text-center">
-                        <img src="./img/floorplan-img.jpg" alt="" data-aos="zoom-in" data-aos-duration="1000">
+                        <img src="./img/floorplan-img.jpg" alt="">
                     </div>
-                    <p class="text-dark text-center margin-top" data-aos="zoom-in" data-aos-duration="1000">
+                    <p class="text-dark text-center margin-top" data-aos="fade-up" data-aos-duration="2000">
                         This spacious 120 square meter apartment offers a comfortable and stylish living space. 
                         With ample room to accommodate various design concepts and layouts, 
                         it provides a versatile canvas for your interior decor ideas. 
@@ -133,7 +133,7 @@
                   </div>
             </div>
             <div class="bar__left col-md-4">
-                <form class="row g-3" data-aos="fade-left" data-aos-duration="1000">
+                <form class="row g-3">
                     <div class="col-md-12">
                       <input type="text" class="form-control" id="validationDefault01" placeholder="Your name" required>
                     </div>
@@ -150,7 +150,7 @@
                       <button class="btn btn-primary" type="submit">Submit</button>
                     </div>
                   </form>
-                  <div class="sidebar-left__recent" data-aos="fade-left" data-aos-duration="1000">
+                  <div class="sidebar-left__recent" data-aos="fade-left" data-aos-duration="2000">
                     <div class="rencent__title">
                         <h6>Recent Properties <b></b></h6>
                     </div>
@@ -179,7 +179,7 @@
                         </div>
                       </div>
                 </div>
-                <div class="sidebar-left__Catalog" data-aos="fade-left" data-aos-duration="1000">
+                <div class="sidebar-left__Catalog" data-aos="fade-left" data-aos-duration="2000">
                     <div class="Catalog__title">
                         <h6>Categories <b></b></h6>
                     </div>
@@ -200,7 +200,7 @@
     <footer class="footer bg-dark">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-sm-6"  data-aos="fade-right" data-aos-duration="1000">
+                <div class="col-lg-4 col-sm-6" data-aos="fade-right" data-aos-duration="2000">
                     <a href="#">
                             <img src="./img/logo.png" alt="" height="22">
                         </a>
@@ -215,7 +215,7 @@
                         <li class="list-inline-item border-0 p-2"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github git icon-sm"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-sm-6 margin-bot" data-aos="fade-up" data-aos-duration="1000">
+                <div class="col-lg-3 col-sm-6 margin-bot" data-aos="fade-up" data-aos-duration="2000">
                     <h6 class="mb-3 mt-sm-0 mt-5 text-white">Others Links</h6>
                     <ul class="list-unstyled footer-list">
                         <li class="py-2"><a class="fs-15" href="#"><span class="icon fs-12 me-2">∎</span> About Us</a></li>
@@ -225,7 +225,7 @@
                         <li class="py-2"><a class="fs-15" href="#"><span class="icon fs-12 me-2">∎</span> Terms &amp; Condition</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-4 offset-lg-1" data-aos="fade-left" data-aos-duration="1000">
+                <div class="col-lg-4 offset-lg-1" data-aos="fade-left" data-aos-duration="2000">
                     <div class="card rounded border-0 mt-sm-0">
                         <div class="map rounded">
                             <a href="#" class="btn btn-light text-dark position-absolute top-50 start-50 translate-middle map-btn">View Map</a>

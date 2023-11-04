@@ -74,4 +74,7 @@ b{
     display: none;
 }
 
+#product, #agent, #ourblog, #partners, #service, #review, #mission, #page, #blog, #detail {
+    overflow: hidden;
+}
 

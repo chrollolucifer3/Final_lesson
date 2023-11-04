@@ -1,6 +1,7 @@
 .footer {
     color: #263b5e;
     padding: 80px 0px 50px;
+    overflow: hidden;
 }
 
 .bg-dark {

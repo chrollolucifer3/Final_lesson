@@ -22,7 +22,6 @@
     <link rel="stylesheet" href="./style/footer.css">
     <link rel="stylesheet" href="./style/page.css">
     <link rel="stylesheet" href="./style/share.css">
-    <!-- CDN AOS JS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- link font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,32 +31,32 @@
 
 <body>
     <!-- Phần navbar top -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="navbar" data-aos="fade-down" data-aos-duration="1000">
-            <div class="container">
-                <a href="./index.html" class="navbar-brand"><img src="./img/logo.png" alt="" height="22"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a href="./index.html" aria-current="page" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="./properties.html" class="nav-link">Properties</a></li>
-                        <li class="nav-item"><a href="./page.html" class="nav-link active">Page</a></li>
-                        <li class="nav-item"><a href="./blog.html" class="nav-link">Blog</a></li>
-                    </ul>
-                    <div class="search-button margin-right">
-                        <input class="rounded-input" type="text" placeholder="Search..." id="search-input">
-                        <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
-                    </div>
-                    <div><a href="#" id="openModalButton" class="btn btn-sm nav-btn btn-primary mb-2 mb-lg-0 ms-auto">Contact Us</a></div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="navbar" data-aos="fade-down" data-aos-duration="2000">
+        <div class="container">
+            <a href="./index.html" class="navbar-brand"><img src="./img/logo.png" alt="" height="22"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a href="./index.html" aria-current="page" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="./properties.html" class="nav-link">Properties</a></li>
+                    <li class="nav-item"><a href="./page.html" class="nav-link">Page</a></li>
+                    <li class="nav-item"><a href="./blog.html" class="nav-link">Blog</a></li>
+                </ul>
+                <div class="search-button margin-right">
+                    <input class="rounded-input" type="text" placeholder="Search..." id="search-input">
+                    <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
                 </div>
+                <div><a href="#" id="openModalButton" class="btn btn-sm nav-btn btn-primary mb-2 mb-lg-0 ms-auto">Contact Us</a></div>
             </div>
+        </div>
     </nav>
     <!-- hết phần navbar -->
     <!-- Phần About us -->
     <section class="section" id="page">
         <div class="container">
-            <div class="page__title" data-aos="fade-right" data-aos-duration="1000">
+            <div class="page__title" data-aos="fade-right" data-aos-duration="2000">
                 <h1 class="fontNeuron blockH text-uppercase">
                     <span class="active">About</span>
                     <span class="textSecondary">Us</span>
@@ -65,7 +64,7 @@
                 </h1>
             </div>
             <div class="row align-items-center">
-                <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
+                <div class="col-md-6" data-aos="fade-right" data-aos-duration="2000">
                     <div class="page__logo">
                         <img src="./img/logo.png" alt="" width="100%">
                         <h5 class="margin-top text-center">Discover Your Home <br> Where Dreams Begin and Comfort Never Ends!</h5>
@@ -73,13 +72,13 @@
                         <p class="text-dark"><i class="fa-solid fa-phone"></i> +123.567.8910</p>
                     </div>
                 </div>
-                <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000">
+                <div class="col-md-6">
                     <div class="introduce">
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12" data-aos="fade-down" data-aos-duration="2000">
                                 <p><span class="active">YOUR HOME INVESTMENT & TRADING CO., LTD</span> <span class="text-dark">The company "Your Home" was established on March 25, 2019, with its primary business activities in real estate and finance. The company's leadership consists of individuals who have been active in the Finance-Banking and Real Estate industry for over 10 years. Although our company is still relatively young, we have identified our direction and strengths for business, alongside the enthusiasm of the leadership team and all our employees. We have a vision and an aspiration to become one of the leading real estate and financial companies in Vietnam in the near future.</span></p>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6" data-aos="fade-up" data-aos-duration="2000">
                                 <p class="introduce__title active">
                                     <i class="fa-solid fa-check"></i> Vision:
                                 </p>
@@ -87,7 +86,7 @@
                                     With a strong desire to lead and a sustainable development strategy, Your Home aims to become a company engaged in real estate business, investment, and services that ranks within the Top 10 in the world.
                                 </p>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6" data-aos="fade-up" data-aos-duration="2000">
                                 <p class="introduce__title active">
                                     <i class="fa-solid fa-check"></i> Business philosophy:
                                 </p>
@@ -106,23 +105,23 @@
     <!-- Phần misson -->
     <section class="section-xs" id="mission">
         <div class="container">
-            <div class="mission__title" data-aos="fade-right" data-aos-duration="1000">
+            <div class="mission__title" data-aos="fade-right" data-aos-duration="2000">
                 <h1 class="fontNeuron blockH text-uppercase">
                     <span class="active">Our</span>
                     <span class="textSecondary">Mission</span>
                     <b></b>
                 </h1>
             </div>
-            <div class="row" data-aos="zoom-in" data-aos-duration="1000">
-                <div class="col-md-4">
+            <div class="row">
+                <div class="col-md-4" data-aos="fade-right" data-aos-duration="2000">
                     <h6 class="active">For customers</h6>
                     <p class="text-dark">Providing comprehensive and cost-effective real estate solutions and services to help customers save time and expenses, contributing to the establishment of a superior lifestyle for customers. In addition to enthusiastic advice, we also provide the quickest, most efficient financial support for customers.</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="2000">
                     <h6 class="active">For employees</h6>
                     <p class="text-dark">Providing comprehensive and cost-effective real estate solutions and services to help customers save time and expenses, contributing to the establishment of a superior lifestyle for customers. In addition to enthusiastic advice, we also provide the quickest, most efficient financial support for customers.</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-left" data-aos-duration="2000">
                     <h6 class="active">For society</h6>
                     <p class="text-dark">Providing comprehensive and cost-effective real estate solutions and services to help customers save time and expenses, contributing to the establishment of a superior lifestyle for customers. In addition to enthusiastic advice, we also provide the quickest, most efficient financial support for customers.</p>
                 </div>
@@ -135,7 +134,7 @@
     <!-- Phần agent -->
     <section class="section-xs" id="agent">
         <div class="container">
-            <div class="agent__title" data-aos="fade-right" data-aos-duration="1000">
+            <div class="agent__title" data-aos="fade-right" data-aos-duration="2000">
                 <h1 class="fontNeuron blockH text-uppercase">
                     <span class="active">our</span>
                     <span class="textSecondary">agent</span>
@@ -143,8 +142,7 @@
                 </h1>
             </div>
             <div class="row">
-                <div class="col-lg-12 owl-carousel carousel-5 owl-theme" data-aos="fade-up"
-                data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
+                <div class="col-lg-12 owl-carousel carousel-5 owl-theme" data-aos="fade-left" data-aos-duration="2000">
                     <div class="card">
                         <img src="./img/img14.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -259,14 +257,14 @@
     <!-- Phần partners -->
     <section class="section-xs" id="partners">
         <div class="container">
-            <div class="partner__title" data-aos="fade-right" data-aos-duration="1000">
+            <div class="partner__title" data-aos="fade-right" data-aos-duration="2000">
                 <h1 class="fontNeuron blockH text-uppercase">
                     <span class="active">OUR</span>
                     <span class="margin-r textSecondary">partners</span>
                     <b></b>
                 </h1>
             </div>
-            <div class="row text-center flex-wrap" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="row text-center flex-wrap" data-aos="fade-left" data-aos-duration="2000">
                 <div class="col-md-3 partners__content">
                     <img src="./img/vinhomes_logo.svg" alt="">
                 </div>
@@ -284,11 +282,12 @@
     </section>
     <!-- Hết phần Partners -->
 
+
     <!-- Footer 1 -->
     <footer class="footer bg-dark">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-sm-6"  data-aos="fade-right" data-aos-duration="1000">
+                <div class="col-lg-4 col-sm-6" data-aos="fade-right" data-aos-duration="2000">
                     <a href="#">
                             <img src="./img/logo.png" alt="" height="22">
                         </a>
@@ -303,7 +302,7 @@
                         <li class="list-inline-item border-0 p-2"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github git icon-sm"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-sm-6 margin-bot" data-aos="fade-up" data-aos-duration="1000">
+                <div class="col-lg-3 col-sm-6 margin-bot" data-aos="fade-up" data-aos-duration="2000">
                     <h6 class="mb-3 mt-sm-0 mt-5 text-white">Others Links</h6>
                     <ul class="list-unstyled footer-list">
                         <li class="py-2"><a class="fs-15" href="#"><span class="icon fs-12 me-2">∎</span> About Us</a></li>
@@ -313,7 +312,7 @@
                         <li class="py-2"><a class="fs-15" href="#"><span class="icon fs-12 me-2">∎</span> Terms &amp; Condition</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-4 offset-lg-1" data-aos="fade-left" data-aos-duration="1000">
+                <div class="col-lg-4 offset-lg-1" data-aos="fade-left" data-aos-duration="2000">
                     <div class="card rounded border-0 mt-sm-0">
                         <div class="map rounded">
                             <a href="#" class="btn btn-light text-dark position-absolute top-50 start-50 translate-middle map-btn">View Map</a>
