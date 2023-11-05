@@ -13,6 +13,16 @@
     .search-button {
         margin-bottom: 12px;
     }
+
+    .dropdown-menu {
+        border: none;
+        background-color: (var(--bs-tertiary-bg-rgb),var(--bs-bg-opacity))
+    }
+
+    .right_24px {
+        margin-top: 16px;
+        margin-bottom: 12px;
+    }
 }
 
 @media (max-width: 768px) {
